@@ -16,6 +16,9 @@
   "dependencies": {},
   "scripts": {
     "compile": "npx hardhat compile",
+    "deploy:local": "npx hardhat run scripts/deploy.js",
+    "deploy:testnet": "npx hardhat run scripts/deploy.js --network ropsten",
+    "deploy:mainnet": "npx hardhat run scripts/deploy.js",
     "test": "npx hardhat test"
   },
   "keywords": [],

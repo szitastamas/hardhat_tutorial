@@ -1,4 +1,4 @@
-const { expect, assert } = require("chai");
+const { expect } = require("chai");
 
 describe("Token", () => {
     // "owner" is the default account, the very first in the accounts array

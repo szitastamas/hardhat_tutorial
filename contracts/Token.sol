@@ -2,6 +2,8 @@
 
 pragma solidity >=0.7.0;
 
+import "hardhat/console.sol";
+
 contract Token {
 
     string public name = "Fetish Spreads";
@@ -17,6 +19,7 @@ contract Token {
 
     function transfer(address to, uint256 amount) external {
         require(balances[msg.sender] >= amount, "Insufficient Funds");
+        console.log("%s is transfering %s tokens to account: %s", msg.sender, amount, to);
 
         balances[msg.sender] -= amount;
         balances[to] += amount;
